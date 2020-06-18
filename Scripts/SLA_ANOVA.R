@@ -32,8 +32,8 @@ ANOVA(ANOVA, type = "2")
 
 # whatever I've done next definitely doesn't work but I'm not entirely sure why. 
 
--SLA %>% group_by(City) %>% summarise(SLA.avg = mean(value)),
--SLA.sd = sd(value),
+- SLA %>% group_by(City) %>% summarise(SLA.avg = mean(value)),
+SLA.sd = sd(value),
 SLA.n = length (value),
 SLA.se = sd(value)/sqrt(n())
 
